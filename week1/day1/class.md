@@ -1,34 +1,3 @@
-## **Class Guide**
-
----------
-
-**Work-in:**
-
-1. Intro Bootcamp Presentation
-
----------
-
-**Work-out:**
-
-
----------
-
-*Remember, you have many cheatsheets. Learn to use it.*
-
-*PythonTutor is your friend... take care of it.*
-
-*Use Google everytime you need. Google must be your shadow.*
-
----------
-
-**Lead Instructor**: *Gabriel Vázquez Torres*
-
-- gabriel@thebridgeschool.es
-
-**Teacher Assistant**: *Clara Piniella Martinez*
-
-- clara.piniella@thebridgeschool.es
-
-**Teacher Assistant**: *Diomedes Barbero Martinez*
-
-- diomedes@thebridgeschool.es
+version https://git-lfs.github.com/spec/v1
+oid sha256:5f5363c086b91f48c63723c180158726817005b131d477a15d9c5c14843b8785
+size 541

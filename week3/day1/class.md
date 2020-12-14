@@ -1,35 +1,3 @@
-## **Class Guide**
-
----------
-
-**Work-in:**
-
-1. Python
-
----------
-
-**Work-out:**
-
-2. Python exercises
-
----------
-
-*Remember, you have many cheatsheets. Learn to use it.*
-
-*PythonTutor is your friend... take care of it.*
-
-*Use Google everytime you need. Google must be your shadow.*
-
----------
-
-**Lead Instructor**: *Gabriel Vázquez Torres*
-
-- gabriel@thebridgeschool.es
-
-**Teacher Assistant**: *Clara Piniella Martinez*
-
-- clara.piniella@thebridgeschool.es
-
-**Teacher Assistant**: *Diomedes Barbero Martinez*
-
-- diomedes@thebridgeschool.es
+version https://git-lfs.github.com/spec/v1
+oid sha256:b5c980fc6cffdb9fa9bb4497f2cbfce8ecf46b95138b89953ef4b213ee4d6a37
+size 540

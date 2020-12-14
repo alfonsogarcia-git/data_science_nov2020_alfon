@@ -1,15 +1,3 @@
-import a
-import time
-
-r = a.f()
-print(r)
-
-print(a.variable_de_a)
-a.variable_de_a = 6
-print(a.variable_de_a)
-
-
-while True:
-    print(4)
-    time.sleep(4)
-    print(5)
+version https://git-lfs.github.com/spec/v1
+oid sha256:096da42666729536b2977daa184a3934d6d423d7e15e367964ffc703211a1cfe
+size 165
