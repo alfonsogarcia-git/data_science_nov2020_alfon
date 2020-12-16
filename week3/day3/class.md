@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2fbb28320030de3013c552cd39e4155e5a52f84473f61af048f629a92f5f6f12
-size 567
+## **Class Guide**
+
+---------
+
+**Work-in:**
+
+1. Python
+2. Statistics introduction
+
+---------
+
+**Work-out:**
+
+3. Python exercises
+
+---------
+
+*Remember, you have many cheatsheets. Learn to use it.*
+
+*PythonTutor is your friend... take care of it.*
+
+*Use Google everytime you need. Google must be your shadow.*
+
+---------
+
+**Lead Instructor**: *Gabriel Vázquez Torres*
+
+- gabriel@thebridgeschool.es
+
+**Teacher Assistant**: *Clara Piniella Martinez*
+
+- clara.piniella@thebridgeschool.es
+
+**Teacher Assistant**: *Diomedes Barbero Martinez*
+
+- diomedes@thebridgeschool.es

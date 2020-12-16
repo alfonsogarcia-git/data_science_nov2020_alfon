@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03f72ee87c21af1c8565c6c971a3e17439ca1c0e39218590baaf2d6c85b2cbb3
-size 253
+import numpy as np
+import pandas as pd 
+import matplotlib.pyplot as plt
+
+def grafica_verde(lista, ylabel):
+    plt.plot(lista, linewidth=2, 
+             marker='o', color="purple", linestyle='dashed', markersize=6)
+    plt.ylabel(ylabel)
+    plt.show()

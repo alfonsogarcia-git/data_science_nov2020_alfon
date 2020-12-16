@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc1f6488a36834327a3cbcccbb3acd3259828d2a75794880939c24d3fd5591d2
-size 207
+# This file represents your module.
+# Write the code...
+import pandas as pd
+import numpy as np
+
+def mean_visualization():
+    """Draw the mean in a plot"""
+    return None
+
+def show_list_of_elements(lista):
+    # TODO 
+    pass
+
+x = mean_visualization()
+print(x)
