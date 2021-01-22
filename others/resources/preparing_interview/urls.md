@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0051b99d830f48ce414d36cd9074bc8f71ff6dbc7ad1337969ef35e880ab3207
-size 329
+1. https://docs.google.com/spreadsheets/d/1djhTq4vD72lzuLY2rCMOkkSuNG2rRf_C5PwNMjcIAMk/edit#gid=859146723
+
+2. https://towardsdatascience.com/know-what-employers-are-expecting-for-a-data-scientist-role-in-2020-65ad68553cc4
+
+3. https://www.datasciencecentral.com/profiles/blogs/109-commonly-asked-data-science-interview-questions
+
