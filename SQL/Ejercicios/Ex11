@@ -1,0 +1,3 @@
+SELECT BillingCountry, COUNT(*) as 'Amount of Bills'
+FROM invoices
+GROUP BY BillingCountry

@@ -1,0 +1,3 @@
+SELECT DISTINCT BillingCountry
+-- Comando DISTINCT te quita duplicados
+FROM invoices

@@ -1,0 +1,4 @@
+SELECT FirstName || ' '|| LastName as 'FullName', CustomerId, Country
+-- Con lo de arriba estas concatenando FirstName y LastName
+FROM customers
+WHERE Country != 'USA'

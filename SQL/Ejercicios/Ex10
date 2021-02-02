@@ -1,0 +1,3 @@
+SELECT InvoiceId, COUNT(*)
+FROM invoice_items
+GROUP BY InvoiceId
