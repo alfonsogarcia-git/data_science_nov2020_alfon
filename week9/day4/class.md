@@ -7,7 +7,6 @@
 1. Grid Search
 2. Multiple ML Algorithms
 
-
 *Tutorials*
 ---------
 
