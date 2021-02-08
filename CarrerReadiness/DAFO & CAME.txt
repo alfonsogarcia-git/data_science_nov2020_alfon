@@ -1,0 +1,29 @@
+ALFON
+
+DAFO: Debilidades, amenazas, fortalezas, oportunidades
+    - Debilidades:
+    - Amenazas:
+    - Fortalezas:
+    - Oportunidades:
+
+CAME: Corregir, afrontar, manterner, explotar
+    - Corregir:
+    - Afrontar:
+    - Matener:
+    - Explotar:
+
+ROBER
+
+DAFO: Debilidades, amenazas, fortalezas, oportunidades
+    - Debilidades: Sector de la hosteleria se ha quedado atras
+    - Amenazas: Sector de la hosteleria esta en peligro
+    - Fortalezas: Ambicion y cabezon con las prioridades claras
+    - Oportunidades: Trabajar en este sector despues del bootcamp
+
+CAME: Corregir, afrontar, manterner, explotar
+    - Corregir:
+    - Afrontar:
+    - Matener:
+    - Explotar:
+
+
