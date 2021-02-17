@@ -4,13 +4,15 @@
 
 **Work-in:**
 
-1. R part II
+1. DB-Scan
+2. T-SNE
+3. R Part I
 
 ---------
 
 **Work-out:**
 
-2. Other exercises
+4. Other exercises
 
 ---------
 

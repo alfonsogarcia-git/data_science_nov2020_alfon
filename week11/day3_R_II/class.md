@@ -4,13 +4,14 @@
 
 **Work-in:**
 
-1. R part I
+1. R part II
+2. Kahoot
 
 ---------
 
 **Work-out:**
 
-2. Other exercises
+3. Other exercises
 
 ---------
 

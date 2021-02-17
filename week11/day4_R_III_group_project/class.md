@@ -4,15 +4,13 @@
 
 **Work-in:**
 
-1. DB-Scan
-2. T-SNE
-3. R Introducción
+1. R group project
 
 ---------
 
 **Work-out:**
 
-4. Other exercises
+2. Other exercises
 
 ---------
 
