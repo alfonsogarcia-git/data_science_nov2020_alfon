@@ -6,3 +6,4 @@
 - Formato pdf, nunca word
 - Conciso e informacion necesaria
 - Experiencia en orden cronologico de mas reciente a menos
+- Un parrafo explicativo sobre quien eres (profesinalmente)
