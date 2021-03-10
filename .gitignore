@@ -3,6 +3,7 @@ en.openfoodfacts.org.products.tsv
 Sentiment_Analysis.csv
 consciencesai
 NO_SUBIR_COPYRIGHT_init_flask_consciencesai.z01
+Alfon-key-pair.pem
 
 *.h5
 model*
