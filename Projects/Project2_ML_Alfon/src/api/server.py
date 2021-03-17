@@ -1,6 +1,9 @@
 from flask import Flask, request, render_template
 from functions import read_json
 import json, os
+import cv2
+from tensorflow.keras.models import load_model
+import numpy as np
 
 abspath = os.path.abspath(__file__)
 dname = os.path.dirname(abspath)
@@ -29,7 +32,8 @@ def get_json():
 
 @app.route('/clean_data_json')
 def get_clean_data():
-    return 'clean datasss json here'
+    f = open('../../reports/clean_data.json')
+    return json.load(f)
 
 @app.route('/predictions_json')
 def get_predictions_json():
@@ -40,6 +44,41 @@ def get_predictions_json():
 @app.route("/get_predictions")
 def get_predictions():
     return app.send_static_file('predictions_df.html')
+
+@app.route("/predict_from_file") #, methods=['GET', 'POST'])
+def predict_from_file():
+    img_filename = request.args.get('img')
+    os.chdir('../../data/chest_pneumonia')
+    wd = os.getcwd()
+    fol1 = ['train', 'test']
+    fol2 = ['normal', 'pneumonia']
+    for i in os.listdir(wd):
+        if i in fol1:
+            for j in os.listdir(i):
+                if j in fol2:
+                    if img_filename in os.listdir(i + '/' + j):
+                        a = i[:]
+                        b = j[:]
+                        print('Found the file')
+    os.chdir(wd + '/' + a + '/' + b)
+    wd_n = os.getcwd()
+    print('Updated directory:', wd_n)
+    img = cv2.imread(wd_n + '/' + img_filename, 0)
+    if img.shape != (291, 291):
+        img = cv2.resize(img, dsize=(291, 291), interpolation= cv2.INTER_CUBIC)
+    img = img.reshape(1, 291, 291, 1)
+    model = load_model('../../../../models/model_pneu.h5')
+    prediction = np.argmax(model.predict(img), axis=-1)
+    code = {1: 'Healthy', 0: 'Bacterial', 2: 'Virus'}
+    
+    return f'Predicted label for image {img_filename} was {code[prediction[0]]}'
+
+# @app.route("/predict_from_file2", methods=['POST'])
+# def predict_from_file2():
+#     img_filename = request.args.get('img2')
+#     if request.method == ['POST']:
+#         img = request.files['img2']
+#     return img_filename
 
 # ---------- Other functions ----------
 
