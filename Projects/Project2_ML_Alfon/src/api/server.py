@@ -2,6 +2,10 @@ from flask import Flask, request, render_template
 from functions import read_json
 import json, os
 
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
+
 # Mandatory
 app = Flask(__name__)     # En este caso __name__ = __main__
 
@@ -16,23 +20,26 @@ def ask_token():
 
 @app.route("/g_json")
 def get_json():
-    S = 'J53812814'
     token_id = request.args.get('token')
-    return render_template('index.html', name=token_id)
+    S = 'J53812814'
+    if token_id == S:
+        return app.send_static_file('json_choose.html')
+    else:
+        return 'Something went wrong, please check if token_id is correct'
 
-    # if token_id == S:
-    #     return render_template('json_page.html')
-    # else:
-    #     return 'Something went wrong, please check if token_id is correct'
+@app.route('/clean_data_json')
+def get_clean_data():
+    return 'clean datasss json here'
+
+@app.route('/predictions_json')
+def get_predictions_json():
+    f = open('../../reports/predictions.json')
+    data = json.load(f)
+    return data
 
 @app.route("/get_predictions")
 def get_predictions():
-    return 'predictions'
-
-@app.route("/greet")
-def greet():
-    username = request.args.get('name')
-    return render_template('index.html', name=username)
+    return app.send_static_file('predictions_df.html')
 
 # ---------- Other functions ----------
 
@@ -43,7 +50,6 @@ def main():
     # Get the settings fullpath
     # \\ --> WINDOWS
     # / --> UNIX
-    # settings_file = os.path.dirname(os.getcwd()) + "/settings.json"
     settings_file = os.path.dirname(__file__) + os.sep + "/settings.json"
     # Load json from file 
     json_readed = read_json(fullpath=settings_file)
@@ -59,6 +65,9 @@ def main():
     else:
         print("Server settings.json doesn't allow to start server. " + 
               "Please, allow it to run it.")
+
+print('Current directory:', os.getcwd())
+
 
 if __name__ == "__main__":
     main()

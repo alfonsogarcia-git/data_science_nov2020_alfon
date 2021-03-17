@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greet form</title>
+</head>
+
+<style>
+    .button {
+      border: none;
+      color: rgb(255, 255, 255);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    
+    .button1 {background-color: #4CAF50;} /* Green */
+    .button2 {background-color: #008CBA;} /* Blue */
+    </style>
+
+
+<body>
+
+    <h1> Pick one:</h1>
+
+    <form id="myform" action="clean_data_json">
+        <button class='button button1' style="height:75px;width:150px" type="submit">Clean Data</button>
+    </form>
+
+
+    <form id="myform2" action="predictions_json">
+        <button class='button button2' style="height:75px;width:150px" type="submit">Predictions</button>
+    </form>
+
+</body>
+
+</html>
