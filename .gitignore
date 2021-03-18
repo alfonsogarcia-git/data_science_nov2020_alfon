@@ -4,6 +4,7 @@ Sentiment_Analysis.csv
 consciencesai
 NO_SUBIR_COPYRIGHT_init_flask_consciencesai.z01
 Alfon-key-pair.pem
+others/datasets/xray-lung-segmentation/sample_submission.txt
 
 *.h5
 model*

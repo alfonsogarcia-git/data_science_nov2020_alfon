@@ -48,6 +48,7 @@ def get_predictions():
 @app.route("/predict_from_file") #, methods=['GET', 'POST'])
 def predict_from_file():
     img_filename = request.args.get('img')
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     os.chdir('../../data/chest_pneumonia')
     wd = os.getcwd()
     fol1 = ['train', 'test']
