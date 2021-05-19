@@ -71,6 +71,7 @@ def predict_from_file():
     model = load_model('../../../../models/model_pneu.h5')
     prediction = np.argmax(model.predict(img), axis=-1)
     code = {1: 'Healthy', 0: 'Bacterial', 2: 'Virus'}
+    os.chdir(dname)
     
     return f'Predicted label for image {img_filename} was {code[prediction[0]]}'
 
